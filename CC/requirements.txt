@@ -1,0 +1,6 @@
+Flask
+gunicorn
+tensorflow
+google-cloud-storage
+google-cloud-firestore
+flask-cors
