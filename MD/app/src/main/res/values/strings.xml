@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">WesataOne</string>
+
+    <!--splash screen-->
+    <string name="pattern_top">Pattern Top</string>
+    <string name="logo">Logo</string>
+    <string name="pattern_bottom">Pattern Bottom</string>
+
+    <!--sign in/ sign up-->
+    <string name="sign_in">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="conf_pass">Confirm Password</string>
+    <string name="or">Or</string>
+    <string name="google_sign_in">Sign In with Google</string>
+    <string name="google_signup">Sign Up with Google</string>
+    <string name="no_account">Don\'t have an account? Sign Up</string>
+    <string name="have_account">Already have an account? Sign In</string>
+
+    <string name="home">Home</string>
+    <string name="slider">Slider</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="location">Location</string>
+    <string name="category">Category</string>
+    <string name="beach">Beach</string>
+    <string name="jakarta">Jakarta</string>
+    <string name="place_fort">Fort Rotterdam</string>
+    <string name="loc_sulsel">Sulawesi Selatan</string>
+    <string name="rating">4.5</string>
+    <string name="desc">Description</string>
+    <string name="desc_text">Benteng Rotterdam atau Benteng Ujung Pandang adalah sebuah benteng peninggalan Kerajaan Gowa\-Tallo\. Letak benteng ini berada di pinggir pantai sebelah barat Kota Makassar\, Sulawesi Selatan\. Benteng ini memiliki enam bastion dan dikelilingi oleh dinding setinggi tujuh meter dan parit sedalam dua meter\.</string>
+    <string name="detail">Location Detail</string>
+
+
+    <string name="fav">favorite</string>
+    <string name="noFavoritePlaces">Favorite destination not found</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="profile">Profile</string>
+    <string name="edit">Edit Profile</string>
+
+    <string name="back">Back</string>
+
+</resources>

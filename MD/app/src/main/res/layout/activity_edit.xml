@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/bg_back"
+        android:src="@drawable/back_icon"
+        android:contentDescription="@string/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="143dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/pattern_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="559dp"
+        android:src="@drawable/ic_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/edit"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editText_layout"
+       />
+
+    <LinearLayout
+        android:id="@+id/editText_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintVertical_bias="0.752">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_edittext"
+            android:hint="@string/name"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_edittext"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_edittext"
+            android:hint="@string/pass"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confpass_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_edittext"
+            android:hint="@string/conf_pass"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="16dp"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
