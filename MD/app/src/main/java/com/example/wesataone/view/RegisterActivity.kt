@@ -12,7 +12,7 @@ import com.example.wesataone.model.customview.EmailEditText
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
-    private lateinit var emailEditText: EmailEditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
