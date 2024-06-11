@@ -7,11 +7,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.wesataone.R
 import com.example.wesataone.databinding.ActivitySignUpBinding
+import com.example.wesataone.model.customview.EmailEditText
 
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
-    private lateinit var my
+    private lateinit var emailEditText: EmailEditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
