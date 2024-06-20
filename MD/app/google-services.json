@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "709568419727",
+    "project_id": "wesataone-4c58c",
+    "storage_bucket": "wesataone-4c58c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709568419727:android:06330532fefa40a1a25dfa",
+        "android_client_info": {
+          "package_name": "com.example.wesataone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709568419727-ocrptcg47e636nmkfaqtg39v61iusief.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wesataone",
+            "certificate_hash": "6489268e0bd24c8a36560c34b0f36de28e03c7ed"
+          }
+        },
+        {
+          "client_id": "709568419727-du98k1a7eo55kdobhnhej9icdk4i12t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQs3rXWSfJSzdr0XYSr95-UAY9wQKxj4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709568419727-du98k1a7eo55kdobhnhej9icdk4i12t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

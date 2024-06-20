@@ -17,8 +17,8 @@
     <string name="or">Or</string>
     <string name="google_sign_in">Sign In with Google</string>
     <string name="google_signup">Sign Up with Google</string>
-    <string name="no_account">Don\'t have an account? Sign Up</string>
-    <string name="have_account">Already have an account? Sign In</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="have_account">Already have an account?</string>
 
     <string name="home">Home</string>
     <string name="slider">Slider</string>
@@ -37,7 +37,7 @@
     <string name="detail">Location Detail</string>
 
 
-    <string name="fav">favorite</string>
+    <string name="fav">Favorite</string>
     <string name="noFavoritePlaces">Favorite destination not found</string>
     <string name="save">Save</string>
     <string name="reset">Reset</string>
@@ -45,5 +45,8 @@
     <string name="edit">Edit Profile</string>
 
     <string name="back">Back</string>
+    <string name="your_web_client_id">709568419727-du98k1a7eo55kdobhnhej9icdk4i12t2.apps.googleusercontent.com</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="menu_filter">Menu filter</string>
 
 </resources>

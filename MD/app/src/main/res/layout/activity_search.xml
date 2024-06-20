@@ -33,7 +33,7 @@
         android:layout_marginTop="16dp"
         android:hint="@string/search"
         android:padding="1dp"
-        app:endIconDrawable="@drawable/search"
+        app:endIconDrawable="@drawable/search_svgrepo_com"
         app:endIconMode="custom"
         app:endIconScaleType="centerInside"
         app:endIconTint="@color/dark_gray"

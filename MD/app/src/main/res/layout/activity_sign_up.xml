@@ -2,143 +2,239 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red">
+    android:background="@color/red"
+    app:layout_constraintBottom_toTopOf="@+id/constrain2"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:ignore="ContentDescription"
+    tools:context=".view.SignUpActivity">
 
     <ImageView
-        android:layout_width="96dp"
-        android:layout_height="94dp"
+        android:id="@+id/tv1"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="1dp"
         android:background="@drawable/pattern_top"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
-        android:layout_width="0dp"
+        android:id="@+id/logoIv"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/logo_white"
-        app:layout_constraintBottom_toTopOf="@+id/shape"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pattern_top" />
-
-    <ImageView
-        android:id="@+id/shape"
-        android:layout_width="0dp"
-        android:layout_height="567dp"
-        android:layout_marginTop="218dp"
-        android:src="@drawable/ic_shape"
-        app:layout_constraintTop_toBottomOf="@id/logo_white"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/constrain2"
+        tools:ignore="ContentDescription" />
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="566dp"
-        android:orientation="vertical"
-        android:padding="16dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/logoIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/shape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <TextView
+            android:id="@+id/signUptv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/signup"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/nameEditTextlayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameEditTextlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/name"
+            app:layout_constraintBottom_toTopOf="@+id/emailEditTextlayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUptv">
+            <com.example.wesataone.model.customview.EmailEditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/ic_edittext"
+                android:inputType="textEmailAddress"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailEditTextlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/email"
+            app:layout_constraintBottom_toTopOf="@+id/passEditTextlayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameEditTextlayout">
+            <com.example.wesataone.model.customview.EmailEditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/ic_edittext"
+                android:inputType="textEmailAddress"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passEditTextlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/pass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditTextlayout"
+            app:layout_constraintBottom_toTopOf="@+id/cpassEditTextlayout">
+            <com.example.wesataone.model.customview.PasswordEditText
+                android:id="@+id/pass_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/ic_edittext"
+                android:inputType="textEmailAddress"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cpassEditTextlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/pass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passEditTextlayout"
+            app:layout_constraintBottom_toTopOf="@+id/sign_up_button">
+            <com.example.wesataone.model.customview.PasswordEditText
+                android:id="@+id/cpass_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/ic_edittext"
+                android:inputType="textEmailAddress"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="16dp"
+            android:text="@string/signup"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/orTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cpassEditTextlayout"/>
+
+        <TextView
+            android:id="@+id/orTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/or"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/orTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/haveAccountTv"/>
+
+        <TextView
+            android:id="@+id/haveAccountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/have_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/signinTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="@+id/haveAccountTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/haveAccountTv"
+            app:layout_constraintTop_toTopOf="@+id/haveAccountTv"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo_white">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/signup"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/ic_edittext"
-            android:hint="@string/name"
-            android:inputType="textEmailAddress"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp" />
-
-        <com.example.wesataone.model.customview.EmailEditText
-            android:id="@+id/email_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/ic_edittext"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/pass_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/ic_edittext"
-            android:hint="@string/pass"
-            android:inputType="textEmailAddress"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp" />
-
-        <com.example.wesataone.model.customview.PasswordEditText
-            android:id="@+id/confpass_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/ic_edittext"
-            android:hint="@string/conf_pass"
-            android:inputType="textEmailAddress"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp" />
-
-        <Button
-            android:id="@+id/sign_in_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:padding="16dp"
-            android:text="@string/sign_in"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="@string/or" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/google_sign_in_button"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:padding="14dp"
-            android:text="@string/google_sign_in"
-            android:textSize="16sp"
-            app:strokeColor="@color/red" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="@string/no_account" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

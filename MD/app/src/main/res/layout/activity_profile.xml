@@ -50,7 +50,7 @@
                 android:id="@+id/edit_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/edit"
+                android:background="@drawable/edit_svgrepo_com"
                 android:layout_marginTop="40dp"
                 android:layout_marginStart="240dp"/>
 

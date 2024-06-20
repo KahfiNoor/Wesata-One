@@ -21,10 +21,10 @@
             android:name=".view.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".view.RegisterActivity"
+            android:name=".view.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".view.LoginActivity"
+            android:name=".view.SignInActivity"
             android:exported="false" />
         <activity
             android:name=".view.MainActivity"

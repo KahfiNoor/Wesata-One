@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="AlwaysShowAction" >
+    <group android:menuCategory="container">
+        <item android:id="@+id/menu_search"
+            android:title="@string/search"
+            android:icon = "@drawable/search_svgrepo_com"
+            app:showAsAction="always"/>
+        <item android:id="@+id/menu2"
+            android:title="@string/menu_filter"
+            app:showAsAction="always"
+            android:icon="@drawable/filter"/>
+    </group>
+</menu>
